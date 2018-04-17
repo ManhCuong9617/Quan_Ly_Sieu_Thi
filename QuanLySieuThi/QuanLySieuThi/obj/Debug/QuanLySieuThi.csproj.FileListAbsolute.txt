@@ -1,2 +1,1 @@
-D:\C#\QuanLySieuThi\QuanLySieuThi\bin\Debug\QuanLySieuThi.exe.config
-D:\GitHub\QLNS\QuanLySieuThi\QuanLySieuThi\QuanLySieuThi\bin\Debug\QuanLySieuThi.exe.config
+D:\GitHub\QLST\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\QuanLySieuThi.exe.config
