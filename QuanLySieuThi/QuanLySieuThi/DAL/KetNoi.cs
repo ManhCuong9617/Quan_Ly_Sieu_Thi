@@ -12,7 +12,7 @@ namespace QuanLySieuThi.DAL
         SqlConnection _connect;
         public KetNoi()
         {
-            _connect = new SqlConnection(@"Data Source=ManhCuong-PC;Initial Catalog=QuanLySieuThi;Integrated Security=True");
+            _connect = new SqlConnection(@"Data Source=THANHVUONG\SQLEXPRESS88;Initial Catalog=QuanLySieuThi;Integrated Security=True");
 
         }
         public DataTable GetData(string strSql)
@@ -108,10 +108,10 @@ namespace QuanLySieuThi.DAL
             bool b = false;
             SqlCommand cmd = new SqlCommand(querySQL, _connect);
             _connect.Open();
-            SqlDataReader adt = cmd.ExecuteReader();
-            while (adt.Read())
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
             {
-                if (Ma == adt[0].ToString())
+                if (Ma == dr[0].ToString())
                 {
                     b = true;
                     break;
