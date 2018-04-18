@@ -11,3 +11,5 @@ G:\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\QuanLySieuThi.e
 G:\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\QuanLySieuThi.pdb
 G:\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.exe
 G:\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.pdb
+D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.exe
+D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.pdb
