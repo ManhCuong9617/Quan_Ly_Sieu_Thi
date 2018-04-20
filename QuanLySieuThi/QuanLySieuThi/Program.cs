@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using QuanLySieuThi.Views;
+using QuanLySieuThi.View;
 
 namespace QuanLySieuThi
 {
@@ -17,7 +17,7 @@ namespace QuanLySieuThi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmDangNhap());
+            Application.Run(new frmHoaDon_CTHD());
         }
     }
 }
