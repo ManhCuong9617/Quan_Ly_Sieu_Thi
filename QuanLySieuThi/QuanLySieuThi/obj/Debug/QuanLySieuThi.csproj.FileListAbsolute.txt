@@ -29,3 +29,13 @@ G:\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.V
 C:\Users\NgocAnh\Documents\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\QuanLySieuThi.exe.config
 C:\Users\NgocAnh\Documents\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.exe
 C:\Users\NgocAnh\Documents\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.pdb
+C:\Users\NgocAnh\Documents\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\QuanLySieuThi.exe
+C:\Users\NgocAnh\Documents\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\QuanLySieuThi.pdb
+C:\Users\NgocAnh\Documents\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.csprojResolveAssemblyReference.cache
+C:\Users\NgocAnh\Documents\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.Properties.Resources.resources
+C:\Users\NgocAnh\Documents\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.Views.frmDangNhap.resources
+C:\Users\NgocAnh\Documents\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.View.frmHoaDon_CTHD.resources
+C:\Users\NgocAnh\Documents\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.Views.frmKhachHang.resources
+C:\Users\NgocAnh\Documents\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.View.frmLoaiHangHoa_CTLHH.resources
+C:\Users\NgocAnh\Documents\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.View.frmNhanVien.resources
+C:\Users\NgocAnh\Documents\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.csproj.GenerateResource.Cache
