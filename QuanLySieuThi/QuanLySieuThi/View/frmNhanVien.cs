@@ -62,6 +62,7 @@ namespace QuanLySieuThi.View
         {           
             dgvNhanVien.DataSource = Bus.GetData();
             ShowGH();
+            dgvNhanVien.AutoResizeColumns();
         }
 
         private void dgvNhanVien_CellClick(object sender, DataGridViewCellEventArgs e)
