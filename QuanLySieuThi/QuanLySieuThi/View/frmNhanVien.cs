@@ -50,9 +50,18 @@ namespace QuanLySieuThi.View
             txtSDT.Text = "";
             dtNgaySinh.Value = DateTime.Parse("1/1/1997");
         }
-        private void HienThi()
+        public void ShowGH()
         {
+            DataTable dt = new DataTable();
+            dt = Bus.GetListGH();
+            cbGianHang.DataSource = dt;
+            cbGianHang.DisplayMember = "TenGH";
+            cbGianHang.ValueMember = "MaGH";
+        }
+        private void HienThi()
+        {           
             dgvNhanVien.DataSource = Bus.GetData();
+            ShowGH();
         }
 
         private void dgvNhanVien_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -165,6 +174,7 @@ namespace QuanLySieuThi.View
             obj.QueQuan = txtQueQuan.Text;
             obj.SDT = txtSDT.Text;
             obj.NgaySinh = dtNgaySinh.Value;
+            obj.MaGH = cbGianHang.SelectedValue.ToString();
 
             string gt;
             if (radNam.Checked)
@@ -277,7 +287,7 @@ namespace QuanLySieuThi.View
             {
                 dgvNhanVien.DataSource = Bus.TimKiemNV("SELECT MaNV,TenNV,NgaySinh,QueQuan,SDT,Luong,TenGH,GioiTinh FROM dbo.NhanVien INNER JOIN dbo.GianHang ON GianHang.MaGH = NhanVien.MaGH Where NgaySinh LIKE  '%" + txtTimKiem.Text.Trim() + "%'");
             }
-            if (cbTimKiem.Text == "Luong")
+            if (cbTimKiem.Text == "Lương")
             {
                 dgvNhanVien.DataSource = Bus.TimKiemNV("SELECT MaNV,TenNV,NgaySinh,QueQuan,SDT,Luong,TenGH,GioiTinh FROM dbo.NhanVien INNER JOIN dbo.GianHang ON GianHang.MaGH = NhanVien.MaGH Where Luong LIKE  '%" + txtTimKiem.Text.Trim() + "%'");
             }
