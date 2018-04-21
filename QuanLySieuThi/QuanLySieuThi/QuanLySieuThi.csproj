@@ -48,20 +48,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUS\ChiTietHoaDonBUS.cs" />
+    <Compile Include="BUS\ChiTietLoaiHangBUS.cs" />
     <Compile Include="BUS\HoaDonBUS.cs" />
     <Compile Include="BUS\KhachHangBUS.cs" />
+    <Compile Include="BUS\LoaiHangHoaBUS.cs" />
     <Compile Include="BUS\NguoiDungBUS.cs" />
     <Compile Include="BUS\NhaCungCapBUS.cs" />
     <Compile Include="DAL\ChiTietHoaDonDAL.cs" />
+    <Compile Include="DAL\ChiTietLoaiHangDAL.cs" />
     <Compile Include="DAL\HoaDonDAL.cs" />
     <Compile Include="DAL\KetNoi.cs" />
     <Compile Include="DAL\KhacHangDAL.cs" />
+    <Compile Include="DAL\LoaiHangHoaDAL.cs" />
     <Compile Include="DAL\NguoiDungDAL.cs" />
     <Compile Include="DAL\NguoiQuanLyDAL.cs" />
     <Compile Include="DAL\NhaCungCapDAL.cs" />
     <Compile Include="Entity\ChiTietHoaDonEntity.cs" />
+    <Compile Include="Entity\ChiTietLoaiHang.cs" />
     <Compile Include="Entity\HoaDonEntity.cs" />
     <Compile Include="Entity\KhachHang.cs" />
+    <Compile Include="Entity\LoaiHangHoa.cs" />
     <Compile Include="Entity\NguoiDung.cs" />
     <Compile Include="Entity\NguoiQuanLyEntity.cs" />
     <Compile Include="Entity\NhaCungCapEntity.cs" />
@@ -84,6 +90,12 @@
     </Compile>
     <Compile Include="View\frmKhachHang.designer.cs">
       <DependentUpon>frmKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmLoaiHangHoa_CTLHH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmLoaiHangHoa_CTLHH.Designer.cs">
+      <DependentUpon>frmLoaiHangHoa_CTLHH.cs</DependentUpon>
     </Compile>
     <Compile Include="View\frmMain.cs">
       <SubType>Form</SubType>
@@ -109,6 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmKhachHang.resx">
       <DependentUpon>frmKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmLoaiHangHoa_CTLHH.resx">
+      <DependentUpon>frmLoaiHangHoa_CTLHH.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

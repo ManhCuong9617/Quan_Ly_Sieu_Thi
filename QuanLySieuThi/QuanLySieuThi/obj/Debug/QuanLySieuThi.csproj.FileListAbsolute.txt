@@ -24,3 +24,5 @@ E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\Qu
 E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.Views.frmKhachHang.resources
 E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.csproj.GenerateResource.Cache
 E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.View.frmHoaDon_CTHD.resources
+G:\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.View.frmHoaDon_CTHD.resources
+G:\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.View.frmLoaiHangHoa_CTLHH.resources

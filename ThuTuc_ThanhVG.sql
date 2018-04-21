@@ -1,67 +1,78 @@
 ﻿GO 
 USE QuanLySieuThi
 
---HỢP ĐỒNG
+-- insert
 GO 
-CREATE PROC SP_HopDongSelectAll
+INSERT dbo.GianHang( MaGH, TenGH, ViTri, MaNQL )
+VALUES  ('GH001',N'Gian Hàng 1',N'Tầng 1',null)
+
+INSERT dbo.NhanVien( MaNV ,TenNV ,NgaySinh ,QueQuan ,SDT ,Luong ,MaGH)
+VALUES  ( 'NV01',N'Nguyễn Văn Tuấn','12-01-1992',N'Hà Nội','0987654321',6000000,'GH001')
+
+INSERT dbo.NhaCungCap( MaNCC, TenNCC, DiaChi, SDT )
+VALUES  ('NCC01',N'Công Tý TNHH VTV',N'Hà Nội','09866655441')
+
+INSERT dbo.LoaiHangHoa( MaLHH, TenLHH, GhiChu, MaGH )
+VALUES  ('LHH01',N'Nươc',N'không','GH001')
+
+INSERT dbo.ChiTietLoaiHang ( MaNCC, MaLHH, SoLuong )
+VALUES  ('NCC01','LHH01',100)
+
+--Chi Tiết loại hàng
+GO 
+CREATE PROC SP_XemChiTietLoaiHang
 AS
 BEGIN
-	SELECT * FROM dbo.HopDong
+	SELECT l.MaLHH,TenLHH,GhiChu,MaGH,MaNCC,SoLuong 
+	FROM dbo.LoaiHangHoa l  INNER JOIN dbo.ChiTietLoaiHang ON ChiTietLoaiHang.MaLHH = l.MaLHH
 END 
 
 GO 
-CREATE PROC SP_ThemHopDong @MaHD VARCHAR(5), @NgayKy DATE, @MaNV VARCHAR(5),@MaKH VARCHAR(5),@GiaLH INT 
+CREATE PROC SP_ThemCTLH @MaLHH VARCHAR(10),@MaNCC VARCHAR(10),@SoLuong INT 
 AS
  BEGIN 
-	INSERT dbo.HopDong( MaHD, NgayKi, GiaLH, MaNV, MaKH )
-	VALUES  (@MaHD,@NgayKy,@GiaLH,@MaNV,@MaKH)
+	INSERT dbo.ChiTietLoaiHang( MaNCC, MaLHH, SoLuong )
+	VALUES  (@MaNCC,@MaLHH,@SoLuong )
  END 
 
  GO 
- CREATE PROC SP_SuaHopDong @MaHD VARCHAR(5), @NgayKy DATE, @MaNV VARCHAR(5),@MaKH VARCHAR(5),@GiaLH INT 
+CREATE PROC SP_SuaCTLH @MaLHH VARCHAR(10), @MaNCC VARCHAR(10),@SoLuong INT 
 AS
- BEGIN 
-	UPDATE dbo.HopDong SET NgayKi = @NgayKy, MaNV = @MaNV, MaKH = @MaKH, GiaLH = @GiaLH
-	WHERE MaHD = @MaHD
- END 
+ BEGIN  
+	UPDATE dbo.ChiTietLoaiHang SET MaLHH = @MaLHH, MaNCC = @MaNCC , SoLuong = @SoLuong
+	WHERE MaLHH = @MaLHH
+ END
 
  GO 
-CREATE PROC SP_XoaHopDong @MaHD VARCHAR(5)
+CREATE PROC SP_XoaCTLH @MaLHH VARCHAR(10) , @MaNCC VARCHAR(10)
 AS
  BEGIN 
-	DELETE dbo.HopDong 
-	WHERE MaHD = @MaHD
+	DELETE dbo.ChiTietLoaiHang
+	WHERE MaLHH = @MaLHH AND MaNCC = @MaNCC
  END
 
 
----CHI TIẾT HỢP ĐỒNG
+---Loại Hàng Hóa
 
 GO 
-CREATE PROC SP_ChiTietHopDongAll
+CREATE PROC SP_ThemLoaiHangHoa @MaLHH VARCHAR(10), @TenLHH NVARCHAR(50), @GhiChu NVARCHAR(50),@MaGH VARCHAR(10)
 AS
-BEGIN
-	SELECT *FROM dbo.ChiTietHopDong
+BEGIN 
+	INSERT dbo.LoaiHangHoa( MaLHH, TenLHH, GhiChu, MaGH )
+	VALUES  (@MaLHH,@TenLHH,@GhiChu,@MaGH)
 END 
 
 GO 
-CREATE PROC SP_ThemChiTietHopDong @MaHD VARCHAR(5), @MaLH VARCHAR(5), @SoLuong INT 
+CREATE PROC SP_SuaLoaiHangHoa @MaLHH VARCHAR(10), @TenLHH NVARCHAR(50), @GhiChu NVARCHAR(50),@MaGH VARCHAR(10) 
 AS
 BEGIN 
-	INSERT dbo.ChiTietHopDong ( MaHD, MaLH, SoLuong )
-	VALUES  (@MaHD,@MaLH,@SoLuong)
-END 
-
-GO 
-CREATE PROC SP_SuaChiTietHopDong @MaHD VARCHAR(5), @MaLH VARCHAR(5), @SoLuong INT 
-AS
-BEGIN 
-	UPDATE dbo.ChiTietHopDong SET MaHD = @MaHD, MaLH = @MaLH ,SoLuong = @SoLuong
-	WHERE MaHD = @MaHD
+	UPDATE dbo.LoaiHangHoa SET TenLHH = @TenLHH,GhiChu = @GhiChu,MaGH = @MaGH
+	WHERE MaLHH = @MaLHH
 END
 
 GO 
-CREATE PROC SP_XoaChiTietHopDong @MaHD VARCHAR(5)
+CREATE PROC SP_XoaLoaiHangHoa @MaLoaiHangHoa VARCHAR(10)
 AS
 BEGIN 
-	DELETE dbo.ChiTietHopDong WHERE MaHD = @MaHD
+	DELETE dbo.LoaiHangHoa WHERE MaLHH = @MaLoaiHangHoa
 END
