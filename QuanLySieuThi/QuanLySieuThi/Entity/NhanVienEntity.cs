@@ -12,9 +12,10 @@ namespace QuanLySieuThi.Entity
         public string TenNV { get; set; }
         public DateTime NgaySinh { get; set; }
         public string QueQuan { get; set; }
-        public string SDT { get; set; }
+        public string SDT { get; set; }       
         public int Luong { get; set; }
         public string MaGH { get; set; }
+        public string GioiTinh { get; set; }
 
         public NhanVienEntity()
         {
@@ -25,8 +26,9 @@ namespace QuanLySieuThi.Entity
             SDT = "";
             Luong = 0;
             MaGH = "";
+            GioiTinh = "";
         }
-        public NhanVienEntity(string _MaNV, string _TenNV, DateTime _NgaySinh, string _QueQuan, string _SDT, int _Luong, string _MaGH)
+        public NhanVienEntity(string _MaNV, string _TenNV, DateTime _NgaySinh, string _QueQuan, string _SDT, int _Luong, string _MaGH,string _GT)
         {
             MaNV = _MaNV;
             TenNV = _TenNV;
@@ -35,6 +37,7 @@ namespace QuanLySieuThi.Entity
             SDT = _SDT;
             Luong = _Luong;
             MaGH = _MaGH;
+            GioiTinh = _GT;
         }
 
     }
