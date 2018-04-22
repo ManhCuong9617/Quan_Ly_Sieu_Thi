@@ -17,7 +17,7 @@ namespace QuanLySieuThi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmLoaiHangHoa_CTLHH());
+            Application.Run(new frmHangHoa());
         }
     }
 }

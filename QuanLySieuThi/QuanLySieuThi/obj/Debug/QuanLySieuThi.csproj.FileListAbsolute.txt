@@ -40,3 +40,15 @@ C:\Users\NgocAnh\Documents\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\o
 C:\Users\NgocAnh\Documents\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.View.frmNhanVien.resources
 C:\Users\NgocAnh\Documents\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.csproj.GenerateResource.Cache
 G:\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.View.frmNhanVien.resources
+D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\QuanLySieuThi.exe
+D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\QuanLySieuThi.pdb
+D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.csprojResolveAssemblyReference.cache
+D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.Properties.Resources.resources
+D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.Views.frmDangNhap.resources
+D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.View.frmHoaDon_CTHD.resources
+D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.Views.frmKhachHang.resources
+D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.View.frmLoaiHangHoa_CTLHH.resources
+D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.View.frmNhaCungCap.resources
+D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.View.frmNhanVien.resources
+D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.csproj.GenerateResource.Cache
+D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.View.frmHangHoa.resources

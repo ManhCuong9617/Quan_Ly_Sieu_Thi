@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="BUS\ChiTietHoaDonBUS.cs" />
     <Compile Include="BUS\ChiTietLoaiHangBUS.cs" />
+    <Compile Include="BUS\HangHoaBUS.cs" />
     <Compile Include="BUS\HoaDonBUS.cs" />
     <Compile Include="BUS\KhachHangBUS.cs" />
     <Compile Include="BUS\LoaiHangHoaBUS.cs" />
@@ -62,7 +63,7 @@
     <Compile Include="DAL\KhacHangDAL.cs" />
     <Compile Include="DAL\LoaiHangHoaDAL.cs" />
     <Compile Include="DAL\NguoiDungDAL.cs" />
-    <Compile Include="DAL\NguoiQuanLyDAL.cs" />
+    <Compile Include="DAL\HangHoaDAL.cs" />
     <Compile Include="DAL\NhaCungCapDAL.cs" />
     <Compile Include="DAL\NhanVienDAL.cs" />
     <Compile Include="Entity\ChiTietHoaDonEntity.cs" />
@@ -71,7 +72,7 @@
     <Compile Include="Entity\KhachHang.cs" />
     <Compile Include="Entity\LoaiHangHoa.cs" />
     <Compile Include="Entity\NguoiDung.cs" />
-    <Compile Include="Entity\NguoiQuanLyEntity.cs" />
+    <Compile Include="Entity\HangHoa.cs" />
     <Compile Include="Entity\NhaCungCapEntity.cs" />
     <Compile Include="Entity\NhanVienEntity.cs" />
     <Compile Include="Program.cs" />
@@ -81,6 +82,12 @@
     </Compile>
     <Compile Include="View\frmDangNhap.designer.cs">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmHangHoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmHangHoa.Designer.cs">
+      <DependentUpon>frmHangHoa.cs</DependentUpon>
     </Compile>
     <Compile Include="View\frmHoaDon_CTHD.cs">
       <SubType>Form</SubType>
@@ -106,6 +113,12 @@
     <Compile Include="View\frmMain.designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\frmNhaCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmNhaCungCap.Designer.cs">
+      <DependentUpon>frmNhaCungCap.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\frmNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +138,9 @@
     <EmbeddedResource Include="View\frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\frmHangHoa.resx">
+      <DependentUpon>frmHangHoa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\frmHoaDon_CTHD.resx">
       <DependentUpon>frmHoaDon_CTHD.cs</DependentUpon>
     </EmbeddedResource>
@@ -133,6 +149,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmLoaiHangHoa_CTLHH.resx">
       <DependentUpon>frmLoaiHangHoa_CTLHH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmNhaCungCap.resx">
+      <DependentUpon>frmNhaCungCap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmNhanVien.resx">
       <DependentUpon>frmNhanVien.cs</DependentUpon>

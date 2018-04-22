@@ -8,28 +8,28 @@ using QuanLySieuThi.Entity;
 using System.Data;
 namespace QuanLySieuThi.BUS
 {
-    public class NhaCungCapBUS
+    public class HangHoaBUS
     {
-        NhaCungCapDAL dal = new NhaCungCapDAL();
+        HangHoaDAL dal = new HangHoaDAL();
         public DataTable GetData()
         {
             return dal.GetData();
         }
-        public DataTable TimKiemNCC(string str)
+        public DataTable TimKiemHH(string str)
         {
-            return dal.TimKiemNCC(str);
+            return dal.TimKiemHH(str);
         }
-        public int ThemNCC(NhaCungCapEntity ncc)
+        public int ThemHH(HangHoa ncc)
         {
-            return dal.ThemNCC(ncc);
+            return dal.ThemHH(ncc);
         }
-        public int SuaNCC(NhaCungCapEntity ncc)
+        public int SuaHH(HangHoa ncc)
         {
-            return dal.SuaNCC(ncc);
+            return dal.SuaHH(ncc);
         }
-        public int XoaNCC(string id)
+        public int XoaHH(string id)
         {
-            return dal.XoaNCC(id);
+            return dal.XoaHH(id);
         }
         public string TangMa()
         {

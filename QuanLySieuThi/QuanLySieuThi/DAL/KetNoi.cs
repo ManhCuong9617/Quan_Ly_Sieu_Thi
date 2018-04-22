@@ -12,7 +12,7 @@ namespace QuanLySieuThi.DAL
         SqlConnection _connect;
         public KetNoi()
         {
-            _connect = new SqlConnection(@"Data Source=THANHVUONG\SQLEXPRESS88;Initial Catalog=QuanLySieuThi;Integrated Security=True");
+            _connect = new SqlConnection(@"Data Source=ManhCuong-PC;Initial Catalog=QuanLySieuThi;Integrated Security=True");
 
         }
         public DataTable GetData(string strSql)
