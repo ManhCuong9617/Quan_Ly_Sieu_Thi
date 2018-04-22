@@ -43,13 +43,13 @@ namespace QuanLySieuThi.DAL
         {
             SqlParameter[] para =
             {
-                new SqlParameter("MaLHH",MaLoaiHangHoa)
+                new SqlParameter("MaLoaiHangHoa",MaLoaiHangHoa)
         };
             return _connect.ExcuteSQL("SP_XoaLoaiHangHoa", para);
         }
         public string TangMa()
         {
-            return _connect.TangMa("Select * From LoaiHangHoa", "LHH");
+            return _connect.TangMa("Select * From LoaiHangHoa ", "LH");
         }
 
     }

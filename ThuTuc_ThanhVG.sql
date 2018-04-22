@@ -13,7 +13,7 @@ INSERT dbo.NhaCungCap( MaNCC, TenNCC, DiaChi, SDT )
 VALUES  ('NCC01',N'Công Tý TNHH VTV',N'Hà Nội','09866655441')
 
 INSERT dbo.LoaiHangHoa( MaLHH, TenLHH, GhiChu, MaGH )
-VALUES  ('LHH01',N'Nươc',N'không','GH001')
+VALUES  ('LH01',N'Nươc',N'không','GH001')
 
 INSERT dbo.ChiTietLoaiHang ( MaNCC, MaLHH, SoLuong )
 VALUES  ('NCC01','LHH01',100)
@@ -44,11 +44,11 @@ AS
  END
 
  GO 
-CREATE PROC SP_XoaCTLH @MaLHH VARCHAR(10) , @MaNCC VARCHAR(10)
+CREATE PROC SP_XoaCTLH @MaLHH VARCHAR(10)
 AS
  BEGIN 
 	DELETE dbo.ChiTietLoaiHang
-	WHERE MaLHH = @MaLHH AND MaNCC = @MaNCC
+	WHERE MaLHH = @MaLHH 
  END
 
 
@@ -76,3 +76,21 @@ AS
 BEGIN 
 	DELETE dbo.LoaiHangHoa WHERE MaLHH = @MaLoaiHangHoa
 END
+
+GO
+CREATE PROC SP_ListMaGianHang 
+AS
+BEGIN
+	SELECT MaGH
+	FROM dbo.GianHang
+END
+
+GO 
+CREATE PROC SP_ListMaNhaCungCap 
+AS
+BEGIN
+	SELECT MaNCC
+	FROM dbo.NhaCungCap
+END
+
+GO 

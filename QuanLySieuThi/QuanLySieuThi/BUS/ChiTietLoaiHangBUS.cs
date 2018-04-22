@@ -22,9 +22,29 @@ namespace QuanLySieuThi.BUS
         {
             return dal.InsertData(CT);
         }
-        public int DeleteData(string MaLHH, string MaNCC)
+        public int UpdateData(ChiTietLoaiHang CT)
         {
-            return dal.DeleteData(MaLHH, MaNCC);
+            return dal.UpdateData(CT);
+        }
+
+        public int DeleteData(string MaLHH)
+        {
+            return dal.DeleteData(MaLHH);
+        }
+
+        public DataTable TimKiemNV(string strTimKiem)
+        {
+            return dal.TimKiemNV(strTimKiem);
+        }
+
+        public DataTable ListMaGianHang()
+        {
+            return dal.ListMaGianHang();
+        }
+
+        public DataTable ListMaNhaCungCap()
+        {
+            return dal.ListMaNhaCungCap();
         }
     }
 }

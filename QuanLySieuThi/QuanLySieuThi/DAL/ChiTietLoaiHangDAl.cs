@@ -27,14 +27,38 @@ namespace QuanLySieuThi.DAL
             };
             return _connect.ExcuteSQL("SP_ThemCTLH ", para);
         }
-        public int DeleteData(string MaLHH, string MaNCC)
+
+        public int UpdateData(ChiTietLoaiHang CT)
         {
             SqlParameter[] para =
             {
-                new SqlParameter("MaHD",MaLHH),
-                new SqlParameter("MaHH",MaNCC)
-        };
+                new SqlParameter("MaLHH",CT.MaLoaiHH),
+                new SqlParameter("MaNCC",CT.MaNhaCC),
+                new SqlParameter("SoLuong",CT.SoLuong)
+            };
+            return _connect.ExcuteSQL("SP_SuaCTLH ", para);
+        }
+        public int DeleteData(string MaLHH)
+        {
+            SqlParameter[] para =
+            {
+                new SqlParameter("MaLHH",MaLHH),
+            };
             return _connect.ExcuteSQL("SP_XoaCTLH", para);
+        }
+        public DataTable TimKiemNV(string strTimKiem)
+        {
+            return _connect.GetData(strTimKiem);
+        }
+
+        public DataTable ListMaGianHang()
+        {
+            return _connect.GetData("SP_ListMaGianHang", null);
+        }
+
+        public DataTable ListMaNhaCungCap()
+        {
+            return _connect.GetData("SP_ListMaNhaCungCap", null);
         }
     }
 }
