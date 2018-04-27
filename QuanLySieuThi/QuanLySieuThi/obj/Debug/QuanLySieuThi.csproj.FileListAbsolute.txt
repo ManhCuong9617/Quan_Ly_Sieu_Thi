@@ -52,3 +52,22 @@ D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanL
 D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.View.frmNhanVien.resources
 D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.csproj.GenerateResource.Cache
 D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.View.frmHangHoa.resources
+E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\Microsoft.SqlServer.Types.dll
+E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.View.frmHangHoa.resources
+E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.View.frmInHoaDon.resources
+E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.View.frmLoaiHangHoa_CTLHH.resources
+E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.View.frmNhaCungCap.resources
+E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.View.frmNhanVien.resources
+E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\RdlCompile.cache
+E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\RdlCompile.compiled
