@@ -71,3 +71,17 @@ E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\Qu
 E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.View.frmNhanVien.resources
 E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\RdlCompile.cache
 E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\RdlCompile.compiled
+C:\Users\NgocAnh\Documents\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\NgocAnh\Documents\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+C:\Users\NgocAnh\Documents\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\NgocAnh\Documents\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Users\NgocAnh\Documents\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+C:\Users\NgocAnh\Documents\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Users\NgocAnh\Documents\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Users\NgocAnh\Documents\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Users\NgocAnh\Documents\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Users\NgocAnh\Documents\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Users\NgocAnh\Documents\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Users\NgocAnh\Documents\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.View.frmHangHoa.resources
+C:\Users\NgocAnh\Documents\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.View.frmInHoaDon.resources
+C:\Users\NgocAnh\Documents\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.View.frmNhaCungCap.resources
