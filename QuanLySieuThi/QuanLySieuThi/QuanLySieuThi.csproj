@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="BUS\ChiTietHoaDonBUS.cs" />
     <Compile Include="BUS\ChiTietLoaiHangBUS.cs" />
+    <Compile Include="BUS\GianHangBUS.cs" />
     <Compile Include="BUS\HangHoaBUS.cs" />
     <Compile Include="BUS\HoaDonBUS.cs" />
     <Compile Include="BUS\KhachHangBUS.cs" />
@@ -61,6 +62,7 @@
     <Compile Include="BUS\NhanVienBUS.cs" />
     <Compile Include="DAL\ChiTietHoaDonDAL.cs" />
     <Compile Include="DAL\ChiTietLoaiHangDAL.cs" />
+    <Compile Include="DAL\GianHangDAL.cs" />
     <Compile Include="DAL\HoaDonDAL.cs" />
     <Compile Include="DAL\KetNoi.cs" />
     <Compile Include="DAL\KhacHangDAL.cs" />
@@ -71,6 +73,7 @@
     <Compile Include="DAL\NhanVienDAL.cs" />
     <Compile Include="Entity\ChiTietHoaDonEntity.cs" />
     <Compile Include="Entity\ChiTietLoaiHang.cs" />
+    <Compile Include="Entity\GianHangEntity.cs" />
     <Compile Include="Entity\HoaDonEntity.cs" />
     <Compile Include="Entity\KhachHang.cs" />
     <Compile Include="Entity\LoaiHangHoa.cs" />
@@ -91,6 +94,12 @@
     <Compile Include="View\frmDangNhap.designer.cs">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\frmGianHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmGianHang.Designer.cs">
+      <DependentUpon>frmGianHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\frmHangHoa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +111,12 @@
     </Compile>
     <Compile Include="View\frmHoaDon_CTHD.designer.cs">
       <DependentUpon>frmHoaDon_CTHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\frmhuongdan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmhuongdan.designer.cs">
+      <DependentUpon>frmhuongdan.cs</DependentUpon>
     </Compile>
     <Compile Include="View\frmInHoaDon.cs">
       <SubType>Form</SubType>
@@ -152,11 +167,17 @@
     <EmbeddedResource Include="View\frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\frmGianHang.resx">
+      <DependentUpon>frmGianHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\frmHangHoa.resx">
       <DependentUpon>frmHangHoa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmHoaDon_CTHD.resx">
       <DependentUpon>frmHoaDon_CTHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmhuongdan.resx">
+      <DependentUpon>frmhuongdan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmInHoaDon.resx">
       <DependentUpon>frmInHoaDon.cs</DependentUpon>
@@ -166,6 +187,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmLoaiHangHoa_CTLHH.resx">
       <DependentUpon>frmLoaiHangHoa_CTLHH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmNhaCungCap.resx">
       <DependentUpon>frmNhaCungCap.cs</DependentUpon>
@@ -198,7 +222,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Untitled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LogoHV.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -7,23 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Windows.Forms;
+
 using QuanLySieuThi.Entity;
 using QuanLySieuThi.BUS;
-
-
 namespace QuanLySieuThi.View
 {
-    public partial class frmNhaCungCap : Form
+    public partial class frmGianHang : Form
     {
-        NhaCungCapEntity ncc = new NhaCungCapEntity();
-        NhaCungCapBUS bus = new NhaCungCapBUS();
-        int fluu = 1;
-   
-        public frmNhaCungCap()
+        public frmGianHang()
         {
             InitializeComponent();
         }
+
+        GianHang gh = new GianHang();
+        GianHangBUS ghbus = new GianHangBUS();
+        private int fluu = 1;
+      
         private void DisEnl(bool e)
         {
             btnThem.Enabled = !e;
@@ -31,23 +30,23 @@ namespace QuanLySieuThi.View
             btnSua.Enabled = !e;
             btnLuu.Enabled = e;
             btnHuy.Enabled = e;
-            txtMaNCC.Enabled = e;
-            txtTenNCC.Enabled = e;
-            txtDiaChi.Enabled = e;
-            txtSDT.Enabled = e;
+            txtMaGian.Enabled = e;
+            txtTenGian.Enabled = e;
+            txtViTri.Enabled = e;
+            txtMaNQL.Enabled = e;
         }
         private void clearData()
         {
-            txtMaNCC.Text = "";
-            txtTenNCC.Text = "";
-            txtDiaChi.Text = "";
-            txtSDT.Text = "";
+            txtMaGian.Text = "";
+            txtTenGian.Text = "";
+            txtViTri.Text = "";
+            txtMaNQL.Text = "";
         }
         private void HienThi()
         {
-            dgvNCC.DataSource = bus.GetData();
+            dgvGianHang.DataSource = ghbus.XemGianHang();
         }
-        private void frmNhaCungCap_Load(object sender, EventArgs e)
+        private void frmGianHang_Load(object sender, EventArgs e)
         {
             HienThi();
             DisEnl(false);
@@ -84,16 +83,16 @@ namespace QuanLySieuThi.View
         {
             fluu = 0;
             clearData();
-            txtMaNCC.Text = bus.TangMa();
+            txtMaGian.Text = ghbus.TangMa();
             DisEnl(true);
-            txtMaNCC.Enabled = false;
+            txtMaGian.Enabled = false;
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
             fluu = 1;
             DisEnl(true);
-            txtMaNCC.Enabled = false;
+            txtMaGian.Enabled = false;
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -102,7 +101,7 @@ namespace QuanLySieuThi.View
             {
                 try
                 {
-                    bus.XoaNCC(txtMaNCC.Text);
+                    ghbus.XoaGianHang(txtMaGian.Text);
                     MessageBox.Show("Xóa thành công!");
                     clearData();
                     DisEnl(false);
@@ -117,13 +116,13 @@ namespace QuanLySieuThi.View
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            ncc.MaNCC = txtMaNCC.Text;
-            ncc.TenNCC = txtTenNCC.Text;
-            ncc.DiaChi = txtDiaChi.Text;
-            ncc.SDT = txtSDT.Text;
+            gh.MaGH = txtMaGian.Text;
+            gh.TenGH = txtTenGian.Text;
+            gh.Vitri = txtViTri.Text;
+            gh.MaNQL = txtMaNQL.Text;
             if (fluu == 0)
             {
-                bus.ThemNCC(ncc);
+                ghbus.ThemKhachHang(gh);
                 MessageBox.Show("Thêm thành công!");
                 HienThi();
                 clearData();
@@ -131,7 +130,7 @@ namespace QuanLySieuThi.View
             }
             else
             {
-                bus.SuaNCC(ncc);
+                ghbus.SuaKhachHang(gh);
                 MessageBox.Show("Sửa Thành Công ! ");
                 HienThi();
                 clearData();
@@ -139,45 +138,46 @@ namespace QuanLySieuThi.View
             }
         }
 
-        private void dgvNCC_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvGianHang_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (fluu == 0)
             {
-                txtTenNCC.Text = Convert.ToString(dgvNCC.CurrentRow.Cells["TenNCC"].Value);
-                txtDiaChi.Text = Convert.ToString(dgvNCC.CurrentRow.Cells["DiaChi"].Value);
-                txtSDT.Text = Convert.ToString(dgvNCC.CurrentRow.Cells["SDT"].Value);
+                txtTenGian.Text = Convert.ToString(dgvGianHang.CurrentRow.Cells["TenGH"].Value);
+                txtViTri.Text = Convert.ToString(dgvGianHang.CurrentRow.Cells["ViTri"].Value);
+                txtMaNQL.Text = Convert.ToString(dgvGianHang.CurrentRow.Cells["MaNQL"].Value);
             }
+
             else
             {
-                txtMaNCC.Text = Convert.ToString(dgvNCC.CurrentRow.Cells["MaNCC"].Value);
-                txtTenNCC.Text = Convert.ToString(dgvNCC.CurrentRow.Cells["TenNCC"].Value);
-                txtDiaChi.Text = Convert.ToString(dgvNCC.CurrentRow.Cells["DiaChi"].Value);
-                txtSDT.Text = Convert.ToString(dgvNCC.CurrentRow.Cells["SDT"].Value);
+                txtMaGian.Text = Convert.ToString(dgvGianHang.CurrentRow.Cells["MaGH"].Value);
+                txtTenGian.Text = Convert.ToString(dgvGianHang.CurrentRow.Cells["TenGH"].Value);
+                txtViTri.Text = Convert.ToString(dgvGianHang.CurrentRow.Cells["ViTri"].Value);
+                txtMaNQL.Text = Convert.ToString(dgvGianHang.CurrentRow.Cells["MaNQL"].Value);
             }
         }
 
-        private void dgvNCC_RowPrePaint(object sender, DataGridViewRowPrePaintEventArgs e)
+        private void dgvGianHang_RowPrePaint(object sender, DataGridViewRowPrePaintEventArgs e)
         {
-            dgvNCC.Rows[e.RowIndex].Cells["STT"].Value = e.RowIndex + 1;
+            dgvGianHang.Rows[e.RowIndex].Cells["STT"].Value = e.RowIndex + 1;
         }
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
-            if (cmbTimKiem.Text == "Theo Mã Nhà Cung Cấp")
+            if (cmbTimKiem.Text == "Theo Mã Gian Hàng")
             {
-                dgvNCC.DataSource = bus.TimKiemNCC("select * from NhaCungCap where MaNCC like '%" + txtTimKiem.Text + "%'");
+                dgvGianHang.DataSource = ghbus.TimKiemGianHang("select * from GianHang where MaGH like '%" + txtTimKiem.Text + "%'");
             }
-            if (cmbTimKiem.Text == "Theo Tên Nhà Cung Cấp")
+            if (cmbTimKiem.Text == "Theo Tên Gian Hàng")
             {
-                dgvNCC.DataSource = bus.TimKiemNCC("select * from NhaCungCap where TenNCC like '%" + txtTimKiem.Text + "%'");
+                dgvGianHang.DataSource = ghbus.TimKiemGianHang("select * from GianHang where TenGH like N'%" + txtTimKiem.Text + "%'");
             }
-            if (cmbTimKiem.Text == "Theo Địa Chỉ")
+            if (cmbTimKiem.Text == "Theo Vị Trí")
             {
-                dgvNCC.DataSource = bus.TimKiemNCC("select * from NhaCungCap where DiaChi like '%" + txtTimKiem.Text + "%'");
+                dgvGianHang.DataSource = ghbus.TimKiemGianHang("select * from GianHang where ViTri like N'%" + txtTimKiem.Text + "%'");
             }
-            if (cmbTimKiem.Text == "Theo Số Điện Thoại")
+            if (cmbTimKiem.Text == "Theo Mã NQL")
             {
-                dgvNCC.DataSource = bus.TimKiemNCC("select * from NhaCungCap where SDT like '%" + txtTimKiem.Text + "%'");
+                dgvGianHang.DataSource = ghbus.TimKiemGianHang("select * from GianHang where MaNQL like '%" + txtTimKiem.Text + "%'");
             }
         }
 

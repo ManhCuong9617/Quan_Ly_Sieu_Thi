@@ -211,8 +211,8 @@ namespace QuanLySieuThi.View
             DialogResult dr = MessageBox.Show("Bạn chắc chắn muốn thoát?", "Xác nhận thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dr == DialogResult.Yes)
             {
-                // frmMain m = new frmMain();
-                // m.Show();
+                frmMain m = new frmMain();
+                m.Show();
                 this.Close();
             }
             else

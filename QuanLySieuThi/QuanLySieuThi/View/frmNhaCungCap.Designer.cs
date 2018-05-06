@@ -30,14 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmNhaCungCap));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lbMaNCC = new System.Windows.Forms.Label();
-            this.txtMaNCC = new System.Windows.Forms.TextBox();
-            this.lbTenNCC = new System.Windows.Forms.Label();
-            this.txtTenNCC = new System.Windows.Forms.TextBox();
-            this.lbDiaChi = new System.Windows.Forms.Label();
-            this.txtDiaChi = new System.Windows.Forms.TextBox();
-            this.lbSDT = new System.Windows.Forms.Label();
             this.txtSDT = new System.Windows.Forms.TextBox();
+            this.lbSDT = new System.Windows.Forms.Label();
+            this.txtDiaChi = new System.Windows.Forms.TextBox();
+            this.lbDiaChi = new System.Windows.Forms.Label();
+            this.txtTenNCC = new System.Windows.Forms.TextBox();
+            this.lbTenNCC = new System.Windows.Forms.Label();
+            this.txtMaNCC = new System.Windows.Forms.TextBox();
+            this.lbMaNCC = new System.Windows.Forms.Label();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.btnLamMoi = new System.Windows.Forms.Button();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
@@ -78,53 +78,12 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin nhà cung cấp";
             // 
-            // lbMaNCC
+            // txtSDT
             // 
-            this.lbMaNCC.AutoSize = true;
-            this.lbMaNCC.Location = new System.Drawing.Point(33, 25);
-            this.lbMaNCC.Name = "lbMaNCC";
-            this.lbMaNCC.Size = new System.Drawing.Size(118, 17);
-            this.lbMaNCC.TabIndex = 0;
-            this.lbMaNCC.Text = "Mã nhà cung cấp";
-            // 
-            // txtMaNCC
-            // 
-            this.txtMaNCC.Location = new System.Drawing.Point(174, 22);
-            this.txtMaNCC.Name = "txtMaNCC";
-            this.txtMaNCC.Size = new System.Drawing.Size(202, 25);
-            this.txtMaNCC.TabIndex = 1;
-            // 
-            // lbTenNCC
-            // 
-            this.lbTenNCC.AutoSize = true;
-            this.lbTenNCC.Location = new System.Drawing.Point(33, 56);
-            this.lbTenNCC.Name = "lbTenNCC";
-            this.lbTenNCC.Size = new System.Drawing.Size(122, 17);
-            this.lbTenNCC.TabIndex = 0;
-            this.lbTenNCC.Text = "Tên nhà cung cấp";
-            // 
-            // txtTenNCC
-            // 
-            this.txtTenNCC.Location = new System.Drawing.Point(174, 53);
-            this.txtTenNCC.Name = "txtTenNCC";
-            this.txtTenNCC.Size = new System.Drawing.Size(202, 25);
-            this.txtTenNCC.TabIndex = 1;
-            // 
-            // lbDiaChi
-            // 
-            this.lbDiaChi.AutoSize = true;
-            this.lbDiaChi.Location = new System.Drawing.Point(33, 87);
-            this.lbDiaChi.Name = "lbDiaChi";
-            this.lbDiaChi.Size = new System.Drawing.Size(53, 17);
-            this.lbDiaChi.TabIndex = 0;
-            this.lbDiaChi.Text = "Địa chỉ";
-            // 
-            // txtDiaChi
-            // 
-            this.txtDiaChi.Location = new System.Drawing.Point(174, 87);
-            this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(202, 25);
-            this.txtDiaChi.TabIndex = 1;
+            this.txtSDT.Location = new System.Drawing.Point(174, 118);
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.Size = new System.Drawing.Size(202, 25);
+            this.txtSDT.TabIndex = 1;
             // 
             // lbSDT
             // 
@@ -135,12 +94,53 @@
             this.lbSDT.TabIndex = 0;
             this.lbSDT.Text = "Số điện thoại";
             // 
-            // txtSDT
+            // txtDiaChi
             // 
-            this.txtSDT.Location = new System.Drawing.Point(174, 118);
-            this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(202, 25);
-            this.txtSDT.TabIndex = 1;
+            this.txtDiaChi.Location = new System.Drawing.Point(174, 87);
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.Size = new System.Drawing.Size(202, 25);
+            this.txtDiaChi.TabIndex = 1;
+            // 
+            // lbDiaChi
+            // 
+            this.lbDiaChi.AutoSize = true;
+            this.lbDiaChi.Location = new System.Drawing.Point(33, 87);
+            this.lbDiaChi.Name = "lbDiaChi";
+            this.lbDiaChi.Size = new System.Drawing.Size(53, 17);
+            this.lbDiaChi.TabIndex = 0;
+            this.lbDiaChi.Text = "Địa chỉ";
+            // 
+            // txtTenNCC
+            // 
+            this.txtTenNCC.Location = new System.Drawing.Point(174, 53);
+            this.txtTenNCC.Name = "txtTenNCC";
+            this.txtTenNCC.Size = new System.Drawing.Size(202, 25);
+            this.txtTenNCC.TabIndex = 1;
+            // 
+            // lbTenNCC
+            // 
+            this.lbTenNCC.AutoSize = true;
+            this.lbTenNCC.Location = new System.Drawing.Point(33, 56);
+            this.lbTenNCC.Name = "lbTenNCC";
+            this.lbTenNCC.Size = new System.Drawing.Size(122, 17);
+            this.lbTenNCC.TabIndex = 0;
+            this.lbTenNCC.Text = "Tên nhà cung cấp";
+            // 
+            // txtMaNCC
+            // 
+            this.txtMaNCC.Location = new System.Drawing.Point(174, 22);
+            this.txtMaNCC.Name = "txtMaNCC";
+            this.txtMaNCC.Size = new System.Drawing.Size(202, 25);
+            this.txtMaNCC.TabIndex = 1;
+            // 
+            // lbMaNCC
+            // 
+            this.lbMaNCC.AutoSize = true;
+            this.lbMaNCC.Location = new System.Drawing.Point(33, 25);
+            this.lbMaNCC.Name = "lbMaNCC";
+            this.lbMaNCC.Size = new System.Drawing.Size(118, 17);
+            this.lbMaNCC.TabIndex = 0;
+            this.lbMaNCC.Text = "Mã nhà cung cấp";
             // 
             // btnTimKiem
             // 
@@ -378,6 +378,7 @@
             this.Controls.Add(this.btnTimKiem);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmNhaCungCap";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmNhaCungCap";
             this.Load += new System.EventHandler(this.frmNhaCungCap_Load);
             this.groupBox1.ResumeLayout(false);

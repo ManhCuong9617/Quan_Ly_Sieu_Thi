@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanLySieuThi.Entity;
 using QuanLySieuThi.BUS;
-namespace QuanLySieuThi.Views
+namespace QuanLySieuThi.View
 {
     public partial class frmKhachHang : Form
     {

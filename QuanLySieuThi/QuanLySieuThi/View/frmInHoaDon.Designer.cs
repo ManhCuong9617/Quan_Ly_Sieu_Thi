@@ -30,13 +30,23 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.quanLySieuThiDataSet = new QuanLySieuThi.QuanLySieuThiDataSet();
             this.inHoaDonBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.quanLySieuThiDataSet = new QuanLySieuThi.QuanLySieuThiDataSet();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.inHoaDonTableAdapter = new QuanLySieuThi.QuanLySieuThiDataSetTableAdapters.InHoaDonTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.quanLySieuThiDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inHoaDonBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLySieuThiDataSet)).BeginInit();
             this.SuspendLayout();
+            // 
+            // inHoaDonBindingSource
+            // 
+            this.inHoaDonBindingSource.DataMember = "InHoaDon";
+            this.inHoaDonBindingSource.DataSource = this.quanLySieuThiDataSet;
+            // 
+            // quanLySieuThiDataSet
+            // 
+            this.quanLySieuThiDataSet.DataSetName = "QuanLySieuThiDataSet";
+            this.quanLySieuThiDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // reportViewer1
             // 
@@ -50,16 +60,6 @@
             this.reportViewer1.Size = new System.Drawing.Size(686, 416);
             this.reportViewer1.TabIndex = 0;
             // 
-            // quanLySieuThiDataSet
-            // 
-            this.quanLySieuThiDataSet.DataSetName = "QuanLySieuThiDataSet";
-            this.quanLySieuThiDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // inHoaDonBindingSource
-            // 
-            this.inHoaDonBindingSource.DataMember = "InHoaDon";
-            this.inHoaDonBindingSource.DataSource = this.quanLySieuThiDataSet;
-            // 
             // inHoaDonTableAdapter
             // 
             this.inHoaDonTableAdapter.ClearBeforeFill = true;
@@ -71,10 +71,11 @@
             this.ClientSize = new System.Drawing.Size(686, 416);
             this.Controls.Add(this.reportViewer1);
             this.Name = "frmInHoaDon";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmInHoaDon";
             this.Load += new System.EventHandler(this.frmInHoaDon_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.quanLySieuThiDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.inHoaDonBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quanLySieuThiDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }

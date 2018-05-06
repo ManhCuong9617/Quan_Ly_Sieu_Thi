@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanLySieuThi.View;
-using QuanLySieuThi.Views;
 
 namespace QuanLySieuThi
 {
@@ -18,7 +17,7 @@ namespace QuanLySieuThi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmNhanVien());
+            Application.Run(new frmDangNhap());
         }
     }
 }

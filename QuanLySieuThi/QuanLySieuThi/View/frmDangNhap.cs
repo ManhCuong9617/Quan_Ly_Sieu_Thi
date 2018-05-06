@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanLySieuThi.Entity;
 using QuanLySieuThi.BUS;
-namespace QuanLySieuThi.Views
+namespace QuanLySieuThi.View
 {
     public partial class frmDangNhap : Form
     {
@@ -40,6 +40,11 @@ namespace QuanLySieuThi.Views
         private void btnThoat_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void frmDangNhap_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

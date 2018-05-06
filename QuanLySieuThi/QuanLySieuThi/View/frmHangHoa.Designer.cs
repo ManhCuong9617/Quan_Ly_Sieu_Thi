@@ -30,21 +30,21 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHangHoa));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lbMaHH = new System.Windows.Forms.Label();
-            this.txtMaHH = new System.Windows.Forms.TextBox();
-            this.lbTenHH = new System.Windows.Forms.Label();
-            this.txtTenHH = new System.Windows.Forms.TextBox();
-            this.txtGia = new System.Windows.Forms.Label();
-            this.txtGia1 = new System.Windows.Forms.TextBox();
-            this.txtNSX = new System.Windows.Forms.Label();
-            this.txtMaLHH = new System.Windows.Forms.TextBox();
-            this.lbHSD = new System.Windows.Forms.Label();
-            this.txtGhiChu = new System.Windows.Forms.TextBox();
-            this.MaLHH = new System.Windows.Forms.Label();
-            this.lbGhiChu = new System.Windows.Forms.Label();
-            this.dtpNSX = new System.Windows.Forms.DateTimePicker();
             this.dtpHSD = new System.Windows.Forms.DateTimePicker();
+            this.dtpNSX = new System.Windows.Forms.DateTimePicker();
+            this.txtGhiChu = new System.Windows.Forms.TextBox();
+            this.lbGhiChu = new System.Windows.Forms.Label();
+            this.MaLHH = new System.Windows.Forms.Label();
+            this.lbHSD = new System.Windows.Forms.Label();
+            this.txtMaLHH = new System.Windows.Forms.TextBox();
+            this.txtNSX = new System.Windows.Forms.Label();
+            this.txtGia1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtGia = new System.Windows.Forms.Label();
+            this.txtTenHH = new System.Windows.Forms.TextBox();
+            this.lbTenHH = new System.Windows.Forms.Label();
+            this.txtMaHH = new System.Windows.Forms.TextBox();
+            this.lbMaHH = new System.Windows.Forms.Label();
             this.btnLamMoi = new System.Windows.Forms.Button();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.cmbTimKiem = new System.Windows.Forms.ComboBox();
@@ -95,80 +95,20 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin hàng hóa";
             // 
-            // lbMaHH
+            // dtpHSD
             // 
-            this.lbMaHH.AutoSize = true;
-            this.lbMaHH.Location = new System.Drawing.Point(12, 40);
-            this.lbMaHH.Name = "lbMaHH";
-            this.lbMaHH.Size = new System.Drawing.Size(92, 17);
-            this.lbMaHH.TabIndex = 0;
-            this.lbMaHH.Text = "Mã hàng hóa";
+            this.dtpHSD.Location = new System.Drawing.Point(140, 225);
+            this.dtpHSD.Name = "dtpHSD";
+            this.dtpHSD.Size = new System.Drawing.Size(200, 25);
+            this.dtpHSD.TabIndex = 2;
+            this.dtpHSD.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
             // 
-            // txtMaHH
+            // dtpNSX
             // 
-            this.txtMaHH.Location = new System.Drawing.Point(140, 32);
-            this.txtMaHH.Name = "txtMaHH";
-            this.txtMaHH.Size = new System.Drawing.Size(200, 25);
-            this.txtMaHH.TabIndex = 1;
-            // 
-            // lbTenHH
-            // 
-            this.lbTenHH.AutoSize = true;
-            this.lbTenHH.Location = new System.Drawing.Point(12, 81);
-            this.lbTenHH.Name = "lbTenHH";
-            this.lbTenHH.Size = new System.Drawing.Size(96, 17);
-            this.lbTenHH.TabIndex = 0;
-            this.lbTenHH.Text = "Tên hàng hóa";
-            // 
-            // txtTenHH
-            // 
-            this.txtTenHH.Location = new System.Drawing.Point(140, 78);
-            this.txtTenHH.Name = "txtTenHH";
-            this.txtTenHH.Size = new System.Drawing.Size(200, 25);
-            this.txtTenHH.TabIndex = 1;
-            // 
-            // txtGia
-            // 
-            this.txtGia.AutoSize = true;
-            this.txtGia.Location = new System.Drawing.Point(12, 127);
-            this.txtGia.Name = "txtGia";
-            this.txtGia.Size = new System.Drawing.Size(30, 17);
-            this.txtGia.TabIndex = 0;
-            this.txtGia.Text = "Giá";
-            this.txtGia.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // txtGia1
-            // 
-            this.txtGia1.Location = new System.Drawing.Point(140, 122);
-            this.txtGia1.Name = "txtGia1";
-            this.txtGia1.Size = new System.Drawing.Size(145, 25);
-            this.txtGia1.TabIndex = 1;
-            // 
-            // txtNSX
-            // 
-            this.txtNSX.AutoSize = true;
-            this.txtNSX.Location = new System.Drawing.Point(12, 188);
-            this.txtNSX.Name = "txtNSX";
-            this.txtNSX.Size = new System.Drawing.Size(99, 17);
-            this.txtNSX.TabIndex = 0;
-            this.txtNSX.Text = "Ngày sản xuất";
-            // 
-            // txtMaLHH
-            // 
-            this.txtMaLHH.Location = new System.Drawing.Point(140, 264);
-            this.txtMaLHH.Name = "txtMaLHH";
-            this.txtMaLHH.Size = new System.Drawing.Size(200, 25);
-            this.txtMaLHH.TabIndex = 1;
-            // 
-            // lbHSD
-            // 
-            this.lbHSD.AutoSize = true;
-            this.lbHSD.Location = new System.Drawing.Point(11, 231);
-            this.lbHSD.Name = "lbHSD";
-            this.lbHSD.Size = new System.Drawing.Size(91, 17);
-            this.lbHSD.TabIndex = 0;
-            this.lbHSD.Text = "Hạn sử dụng";
-            this.lbHSD.Click += new System.EventHandler(this.label5_Click);
+            this.dtpNSX.Location = new System.Drawing.Point(140, 180);
+            this.dtpNSX.Name = "dtpNSX";
+            this.dtpNSX.Size = new System.Drawing.Size(200, 25);
+            this.dtpNSX.TabIndex = 2;
             // 
             // txtGhiChu
             // 
@@ -176,16 +116,6 @@
             this.txtGhiChu.Name = "txtGhiChu";
             this.txtGhiChu.Size = new System.Drawing.Size(200, 25);
             this.txtGhiChu.TabIndex = 1;
-            // 
-            // MaLHH
-            // 
-            this.MaLHH.AutoSize = true;
-            this.MaLHH.Location = new System.Drawing.Point(12, 272);
-            this.MaLHH.Name = "MaLHH";
-            this.MaLHH.Size = new System.Drawing.Size(119, 17);
-            this.MaLHH.TabIndex = 0;
-            this.MaLHH.Text = "Mã loại hàng hóa";
-            this.MaLHH.Click += new System.EventHandler(this.label5_Click);
             // 
             // lbGhiChu
             // 
@@ -197,20 +127,48 @@
             this.lbGhiChu.Text = "Ghi Chú";
             this.lbGhiChu.Click += new System.EventHandler(this.label5_Click);
             // 
-            // dtpNSX
+            // MaLHH
             // 
-            this.dtpNSX.Location = new System.Drawing.Point(140, 180);
-            this.dtpNSX.Name = "dtpNSX";
-            this.dtpNSX.Size = new System.Drawing.Size(200, 25);
-            this.dtpNSX.TabIndex = 2;
+            this.MaLHH.AutoSize = true;
+            this.MaLHH.Location = new System.Drawing.Point(12, 272);
+            this.MaLHH.Name = "MaLHH";
+            this.MaLHH.Size = new System.Drawing.Size(119, 17);
+            this.MaLHH.TabIndex = 0;
+            this.MaLHH.Text = "Mã loại hàng hóa";
+            this.MaLHH.Click += new System.EventHandler(this.label5_Click);
             // 
-            // dtpHSD
+            // lbHSD
             // 
-            this.dtpHSD.Location = new System.Drawing.Point(140, 225);
-            this.dtpHSD.Name = "dtpHSD";
-            this.dtpHSD.Size = new System.Drawing.Size(200, 25);
-            this.dtpHSD.TabIndex = 2;
-            this.dtpHSD.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
+            this.lbHSD.AutoSize = true;
+            this.lbHSD.Location = new System.Drawing.Point(11, 231);
+            this.lbHSD.Name = "lbHSD";
+            this.lbHSD.Size = new System.Drawing.Size(91, 17);
+            this.lbHSD.TabIndex = 0;
+            this.lbHSD.Text = "Hạn sử dụng";
+            this.lbHSD.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // txtMaLHH
+            // 
+            this.txtMaLHH.Location = new System.Drawing.Point(140, 264);
+            this.txtMaLHH.Name = "txtMaLHH";
+            this.txtMaLHH.Size = new System.Drawing.Size(200, 25);
+            this.txtMaLHH.TabIndex = 1;
+            // 
+            // txtNSX
+            // 
+            this.txtNSX.AutoSize = true;
+            this.txtNSX.Location = new System.Drawing.Point(12, 188);
+            this.txtNSX.Name = "txtNSX";
+            this.txtNSX.Size = new System.Drawing.Size(99, 17);
+            this.txtNSX.TabIndex = 0;
+            this.txtNSX.Text = "Ngày sản xuất";
+            // 
+            // txtGia1
+            // 
+            this.txtGia1.Location = new System.Drawing.Point(140, 122);
+            this.txtGia1.Name = "txtGia1";
+            this.txtGia1.Size = new System.Drawing.Size(145, 25);
+            this.txtGia1.TabIndex = 1;
             // 
             // label1
             // 
@@ -221,6 +179,48 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "( VNĐ )";
             this.label1.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // txtGia
+            // 
+            this.txtGia.AutoSize = true;
+            this.txtGia.Location = new System.Drawing.Point(12, 127);
+            this.txtGia.Name = "txtGia";
+            this.txtGia.Size = new System.Drawing.Size(30, 17);
+            this.txtGia.TabIndex = 0;
+            this.txtGia.Text = "Giá";
+            this.txtGia.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // txtTenHH
+            // 
+            this.txtTenHH.Location = new System.Drawing.Point(140, 78);
+            this.txtTenHH.Name = "txtTenHH";
+            this.txtTenHH.Size = new System.Drawing.Size(200, 25);
+            this.txtTenHH.TabIndex = 1;
+            // 
+            // lbTenHH
+            // 
+            this.lbTenHH.AutoSize = true;
+            this.lbTenHH.Location = new System.Drawing.Point(12, 81);
+            this.lbTenHH.Name = "lbTenHH";
+            this.lbTenHH.Size = new System.Drawing.Size(96, 17);
+            this.lbTenHH.TabIndex = 0;
+            this.lbTenHH.Text = "Tên hàng hóa";
+            // 
+            // txtMaHH
+            // 
+            this.txtMaHH.Location = new System.Drawing.Point(140, 32);
+            this.txtMaHH.Name = "txtMaHH";
+            this.txtMaHH.Size = new System.Drawing.Size(200, 25);
+            this.txtMaHH.TabIndex = 1;
+            // 
+            // lbMaHH
+            // 
+            this.lbMaHH.AutoSize = true;
+            this.lbMaHH.Location = new System.Drawing.Point(12, 40);
+            this.lbMaHH.Name = "lbMaHH";
+            this.lbMaHH.Size = new System.Drawing.Size(92, 17);
+            this.lbMaHH.TabIndex = 0;
+            this.lbMaHH.Text = "Mã hàng hóa";
             // 
             // btnLamMoi
             // 
@@ -485,6 +485,7 @@
             this.Controls.Add(this.btnTimKiem);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmHangHoa";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmHangHoa";
             this.Load += new System.EventHandler(this.frmHangHoa_Load);
             this.groupBox1.ResumeLayout(false);
