@@ -107,6 +107,17 @@ namespace QuanLySieuThi.View
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
+            if (txtMaKhach.Text == "" || txtTenKhach.Text == "" || txtDiaChi.Text == "" || txtSDT.Text == "")
+            {
+                MessageBox.Show("Bạn chưa nhập đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            float a;
+            if (!float.TryParse(txtSDT.Text, out a))
+            {
+                MessageBox.Show("Nhập số điện thoại không chính xác", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             kh.MaKH = txtMaKhach.Text;
             kh.TenKH = txtTenKhach.Text;
             kh.DiaChi = txtDiaChi.Text;
@@ -118,6 +129,7 @@ namespace QuanLySieuThi.View
                 HienThi();
                 clearData();
                 DisEnl(false);
+                fluu = 1;
             }
             else
             {
@@ -128,8 +140,38 @@ namespace QuanLySieuThi.View
                 DisEnl(false);
             }
         }
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            if (cmbTimKiem.Text == "Theo Mã Khách Hàng")
+            {
+                dgvKhachHang.DataSource = khbus.TimKiemKhachHang("select * from KhachHang where MaKH like N'%" + txtTimKiem.Text + "%'");
+            }
+            if (cmbTimKiem.Text == "Theo Tên Khách Hàng")
+            {
+                dgvKhachHang.DataSource = khbus.TimKiemKhachHang("select * from KhachHang where TenKH like N'%" + txtTimKiem.Text + "%'");
+            }
+            if (cmbTimKiem.Text == "Theo Địa Chỉ")
+            {
+                dgvKhachHang.DataSource = khbus.TimKiemKhachHang("select * from KhachHang where DiaChi like N'%" + txtTimKiem.Text + "%'");
+            }
+            if (cmbTimKiem.Text == "Theo Điện Thoại")
+            {
+                dgvKhachHang.DataSource = khbus.TimKiemKhachHang("select * from KhachHang where SDT like N'%" + txtTimKiem.Text + "%'");
+            }
+        }
 
-        private void dgvKhachHang_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void frmKhachHang_Load(object sender, EventArgs e)
+        {
+            HienThi();
+            DisEnl(false);
+        }
+
+        private void dgvKhachHang_RowPrePaint_1(object sender, DataGridViewRowPrePaintEventArgs e)
+        {
+            dgvKhachHang.Rows[e.RowIndex].Cells["STT"].Value = e.RowIndex + 1;
+        }
+
+        private void dgvKhachHang_CellClick_1(object sender, DataGridViewCellEventArgs e)
         {
             if (fluu == 0)
             {
@@ -146,35 +188,9 @@ namespace QuanLySieuThi.View
             }
         }
 
-        private void dgvKhachHang_RowPrePaint(object sender, DataGridViewRowPrePaintEventArgs e)
-        {
-            dgvKhachHang.Rows[e.RowIndex].Cells["STT"].Value = e.RowIndex + 1;
-        }
-
-        private void btnTimKiem_Click(object sender, EventArgs e)
-        {
-            if (cmbTimKiem.Text == "Theo Mã Khách Hàng")
-            {
-                dgvKhachHang.DataSource = khbus.TimKiemKhachHang("select * from KhachHang where MaKH like '%" + txtTimKiem.Text + "%'");
-            }
-            if (cmbTimKiem.Text == "Theo Tên Khách Hàng")
-            {
-                dgvKhachHang.DataSource = khbus.TimKiemKhachHang("select * from KhachHang where MaKH like '%" + txtTimKiem.Text + "%'");
-            }
-            if (cmbTimKiem.Text == "Theo Địa Chỉ")
-            {
-                dgvKhachHang.DataSource = khbus.TimKiemKhachHang("select * from KhachHang where MaKH like '%" + txtTimKiem.Text + "%'");
-            }
-            if (cmbTimKiem.Text == "Theo Điện Thoại")
-            {
-                dgvKhachHang.DataSource = khbus.TimKiemKhachHang("select * from KhachHang where MaKH like '%" + txtTimKiem.Text + "%'");
-            }
-        }
-
-        private void frmKhachHang_Load(object sender, EventArgs e)
+        private void btnLamMoi_Click(object sender, EventArgs e)
         {
             HienThi();
-            DisEnl(false);
         }
     }
 }
