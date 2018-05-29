@@ -1,4 +1,4 @@
-USE QuanLySieuThi
+﻿USE QuanLySieuThi
 GO
 CREATE PROC HD_SelectAll 
 AS
@@ -18,21 +18,6 @@ CREATE PROC Xoa_HD (@Ma varchar(10) )
 AS 
 BEGIN
 	DELETE dbo.HoaDon WHERE MaHD = @Ma 
-END
-GO
-CREATE PROC CTHD_SelectByID (@Ma VARCHAR(10))
-AS
-BEGIN
-	SELECT MaHD,TenHH,SoLuong,DonGia,ThanhTien = (SoLuong*DonGia) FROM dbo.ChiTietHoaDon, dbo.HangHoa
-	WHERE ChiTietHoaDon.MaHH= dbo.HangHoa.MaHH AND  MaHD = @Ma
-END
-GO 
-CREATE PROC Them_CTHD (@MaHD VARCHAR(10), @MaHH VARCHAR(10),@SoLuong INT, @DonGia INT )
-AS
-BEGIN
-	INSERT INTO dbo.ChiTietHoaDon
-	        ( MaHH, MaHD, SoLuong, DonGia )
-	VALUES  ( @MaHH,@MaHD,@SoLuong,@DonGia)
 END
 GO
 CREATE PROC Xoa_CTHD (@MaHD varchar(10),@MaHH varchar(10))
@@ -58,5 +43,24 @@ AS
 BEGIN	
 	SELECT*FROM dbo.NhanVien
 END
-GO 
 
+
+
+
+----Sửa Thủ Tục
+GO 
+ALTER PROC CTHD_SelectByID (@Ma VARCHAR(10))
+AS
+BEGIN
+	SELECT MaHD,TenHH,SoLuong,DonGia,ThanhTien = (SoLuong*DonGia) FROM dbo.ChiTietHoaDon, dbo.HangHoa
+	WHERE ChiTietHoaDon.MaHH= dbo.HangHoa.MaHH AND  MaHD = @Ma
+END
+GO 
+ALTER PROC Them_CTHD (@MaHD VARCHAR(10), @MaHH VARCHAR(10),@SoLuong INT, @DonGia INT )
+AS
+BEGIN
+	INSERT INTO dbo.ChiTietHoaDon
+	        ( MaHH, MaHD, SoLuong, DonGia ,ThanhTien)
+	VALUES  ( @MaHH,@MaHD,@SoLuong,@DonGia,@SoLuong*@DonGia)
+END
+GO
