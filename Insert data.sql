@@ -121,3 +121,103 @@ VALUES  ( 'NV05' , -- MaNV - varchar(10)
           'GH03' , -- MaGH - varchar(10)
           N'Nam'  -- GioiTinh - nvarchar(5)
         )
+GO
+INSERT INTO dbo.NhanVien
+        ( MaNV ,
+          TenNV ,
+          NgaySinh ,
+          QueQuan ,
+          SDT ,
+          Luong ,
+          MaGH ,
+          GioiTinh
+        )
+VALUES  ( 'NV06' , -- MaNV - varchar(10)
+          N'Hà Văn Mạnh' , -- TenNV - nvarchar(50)
+          '1991-04-03' , -- NgaySinh - date
+          N'Hà Nam' , -- QueQuan - nvarchar(20)
+          '0987658234' , -- SDT - varchar(11)
+          8500000 , -- Luong - int
+          'GH03' , -- MaGH - varchar(10)
+          N'Nam'  -- GioiTinh - nvarchar(5)
+        )
+GO
+INSERT INTO dbo.NhanVien
+        ( MaNV ,
+          TenNV ,
+          NgaySinh ,
+          QueQuan ,
+          SDT ,
+          Luong ,
+          MaGH ,
+          GioiTinh
+        )
+VALUES  ( 'NV07' , -- MaNV - varchar(10)
+          N'Nguyễn Bá Huy' , -- TenNV - nvarchar(50)
+          '1993-10-03' , -- NgaySinh - date
+          N'Hà Nội' , -- QueQuan - nvarchar(20)
+          '0989074987' , -- SDT - varchar(11)
+          8500000 , -- Luong - int
+          'GH04' , -- MaGH - varchar(10)
+          N'Nam'  -- GioiTinh - nvarchar(5)
+        )
+GO
+INSERT INTO dbo.NhanVien
+        ( MaNV ,
+          TenNV ,
+          NgaySinh ,
+          QueQuan ,
+          SDT ,
+          Luong ,
+          MaGH ,
+          GioiTinh
+        )
+VALUES  ( 'NV08' , -- MaNV - varchar(10)
+          N'Trần Văn Linh' , -- TenNV - nvarchar(50)
+          '1993-02-13' , -- NgaySinh - date
+          N'Bắc Giang' , -- QueQuan - nvarchar(20)
+          '0987657896' , -- SDT - varchar(11)
+          8500000 , -- Luong - int
+          'GH04' , -- MaGH - varchar(10)
+          N'Nam'  -- GioiTinh - nvarchar(5)
+        )
+GO
+INSERT INTO dbo.NhanVien
+        ( MaNV ,
+          TenNV ,
+          NgaySinh ,
+          QueQuan ,
+          SDT ,
+          Luong ,
+          MaGH ,
+          GioiTinh
+        )
+VALUES  ( 'NV09' , -- MaNV - varchar(10)
+          N'Lê Mạnh Hà' , -- TenNV - nvarchar(50)
+          '1994-04-23' , -- NgaySinh - date
+          N'Hà Nam' , -- QueQuan - nvarchar(20)
+          '0987659237' , -- SDT - varchar(11)
+          8500000 , -- Luong - int
+          'GH05' , -- MaGH - varchar(10)
+          N'Nam'  -- GioiTinh - nvarchar(5)
+        )
+GO
+INSERT INTO dbo.NhanVien
+        ( MaNV ,
+          TenNV ,
+          NgaySinh ,
+          QueQuan ,
+          SDT ,
+          Luong ,
+          MaGH ,
+          GioiTinh
+        )
+VALUES  ( 'NV10' , -- MaNV - varchar(10)
+          N'Ngô Mạnh Hiếu' , -- TenNV - nvarchar(50)
+          '1994-10-05' , -- NgaySinh - date
+          N'Hà Nam' , -- QueQuan - nvarchar(20)
+          '0987013687' , -- SDT - varchar(11)
+          9500000 , -- Luong - int
+          'GH05' , -- MaGH - varchar(10)
+          N'Nam'  -- GioiTinh - nvarchar(5)
+        )
