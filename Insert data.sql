@@ -221,3 +221,30 @@ VALUES  ( 'NV10' , -- MaNV - varchar(10)
           'GH05' , -- MaGH - varchar(10)
           N'Nam'  -- GioiTinh - nvarchar(5)
         )
+
+--GO
+--INSERT dbo.HangHoa
+--        ( MaHH, TenHH, Gia, NSX, HSD, MaLHH, GhiChu )
+--VALUES  ('HH01','Dầu Gội','50000','2018/01/01','2019/01/01','LHH01','')
+--INSERT dbo.HangHoa
+--        ( MaHH, TenHH, Gia, NSX, HSD, MaLHH, GhiChu )
+--VALUES  ('HH02','Bột Giặt','60000','2018/01/01','2019/01/01','LHH02','')
+--INSERT dbo.HangHoa
+--        ( MaHH, TenHH, Gia, NSX, HSD, MaLHH, GhiChu )
+--VALUES  ('HH03','Nước Rửa Bát','70000','2018/01/01','2019/01/01','LHH03','')
+--INSERT dbo.HangHoa
+--        ( MaHH, TenHH, Gia, NSX, HSD, MaLHH, GhiChu )
+--VALUES  ('HH04','Cocacola','15000','2018/01/01','2019/01/01','LHH04','')
+
+--INSERT dbo.HangHoa
+--        ( MaHH, TenHH, Gia, NSX, HSD, MaLHH, GhiChu )
+--VALUES  ('HH05','Mì Tôm','5000','2018/01/01','2019/01/01','LHH05','')
+--INSERT dbo.HangHoa
+--        ( MaHH, TenHH, Gia, NSX, HSD, MaLHH, GhiChu )
+--VALUES  ('HH06','Kem','25000','2018/01/01','2019/01/01','LHH06','')
+--INSERT dbo.HangHoa
+--        ( MaHH, TenHH, Gia, NSX, HSD, MaLHH, GhiChu )
+--VALUES  ('HH07','Sữa','15000','2018/01/01','2019/01/01','LHH07','')
+--INSERT dbo.HangHoa
+--        ( MaHH, TenHH, Gia, NSX, HSD, MaLHH, GhiChu )
+--VALUES  ('HH08','Monter Energy','35000','2018/01/01','2019/01/01','LHH08','')
