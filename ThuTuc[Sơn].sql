@@ -52,7 +52,7 @@ GO
 ALTER PROC CTHD_SelectByID (@Ma VARCHAR(10))
 AS
 BEGIN
-	SELECT MaHD,TenHH,SoLuong,DonGia,ThanhTien = (SoLuong*DonGia) FROM dbo.ChiTietHoaDon, dbo.HangHoa
+	SELECT MaHD,TenHH,SoLuong,DonGia, (SoLuong*DonGia) AS ThanhTien FROM dbo.ChiTietHoaDon, dbo.HangHoa
 	WHERE ChiTietHoaDon.MaHH= dbo.HangHoa.MaHH AND  MaHD = @Ma
 END
 GO 
@@ -60,7 +60,7 @@ ALTER PROC Them_CTHD (@MaHD VARCHAR(10), @MaHH VARCHAR(10),@SoLuong INT, @DonGia
 AS
 BEGIN
 	INSERT INTO dbo.ChiTietHoaDon
-	        ( MaHH, MaHD, SoLuong, DonGia ,ThanhTien)
-	VALUES  ( @MaHH,@MaHD,@SoLuong,@DonGia,@SoLuong*@DonGia)
+	        ( MaHH, MaHD, SoLuong, DonGia)
+	VALUES  ( @MaHH,@MaHD,@SoLuong,@DonGia)
 END
 GO
