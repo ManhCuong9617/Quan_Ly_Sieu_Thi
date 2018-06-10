@@ -138,90 +138,92 @@ namespace QuanLySieuThi.View
             {
                 MessageBox.Show("Bạn chưa nhập mã nhân viên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            if (txtTenNV.Text == "")
+            else if (txtTenNV.Text == "")
             {
                 MessageBox.Show("Bạn chưa nhập tên nhân viên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            if (txtQueQuan.Text == "")
+            else if (txtQueQuan.Text == "")
             {
                 MessageBox.Show("Bạn chưa nhập quê quán nhân viên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
-            if (txtLuong.Text == "")
+            else if (txtLuong.Text == "")
             {
                 MessageBox.Show("Bạn chưa nhập lương nhân viên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
-            if (txtSDT.Text == "")
+            else if(txtSDT.Text == "")
             {
                 MessageBox.Show("Bạn chưa nhập SĐT nhân viên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
-            if (cbGianHang.Text == "")
+            else if (cbGianHang.Text == "")
             {
                 MessageBox.Show("Bạn chưa nhập gian hàng của nhân viên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
 
-            if (radNam.Checked == false && radNu.Checked == false)
+            else if (radNam.Checked == false && radNu.Checked == false)
             {
                 MessageBox.Show("Bạn chưa chọn giới tính của nhân viên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-
-            obj.MaNV = txtMaNV.Text;
-            obj.TenNV = txtTenNV.Text;
-            obj.QueQuan = txtQueQuan.Text;
-            obj.SDT = txtSDT.Text;
-            obj.NgaySinh = dtNgaySinh.Value;
-            obj.MaGH = cbGianHang.SelectedValue.ToString();
-
-            string gt;
-            if (radNam.Checked)
+            else
             {
-                gt = "Nam";
-            }
-            else gt = "Nữ";
+                obj.MaNV = txtMaNV.Text;
+                obj.TenNV = txtTenNV.Text;
+                obj.QueQuan = txtQueQuan.Text;
+                obj.SDT = txtSDT.Text;
+                obj.NgaySinh = dtNgaySinh.Value;
+                obj.MaGH = cbGianHang.SelectedValue.ToString();
 
-            obj.GioiTinh = gt;
+                string gt;
+                if (radNam.Checked)
+                {
+                    gt = "Nam";
+                }
+                else gt = "Nữ";
 
-            int _luong;
-            int.TryParse(txtLuong.Text, out _luong);
-            obj.Luong = _luong;
+                obj.GioiTinh = gt;
 
-            if (txtMaNV.Text != "" && txtTenNV.Text != "" && txtQueQuan.Text != "" && txtSDT.Text != "" && txtLuong.Text != "" && cbGianHang.Text != "" && (radNam.Checked == false || radNu.Checked == false )&& fluu == 0)
-            {
-                try
+                int _luong;
+                int.TryParse(txtLuong.Text, out _luong);
+                obj.Luong = _luong;
+
+                if (txtMaNV.Text != "" && txtTenNV.Text != "" && txtQueQuan.Text != "" && txtSDT.Text != "" && txtLuong.Text != "" && cbGianHang.Text != "" && (radNam.Checked == false || radNu.Checked == false) && fluu == 0)
                 {
-                    Bus.InsertData(obj);
-                    MessageBox.Show("Thêm thành công!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    HienThi();
-                    frmNhanVien_Load(sender, e);
-                    clearData();
-                    DisEnl(false);
-                    fluu = 1;
+                    try
+                    {
+                        Bus.InsertData(obj);
+                        MessageBox.Show("Thêm thành công!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        HienThi();
+                        frmNhanVien_Load(sender, e);
+                        clearData();
+                        DisEnl(false);
+                        fluu = 1;
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Lỗi" + ex.Message);
+                    }
                 }
-                catch (Exception ex)
+                else if (txtMaNV.Text != "" && txtTenNV.Text != "" && txtQueQuan.Text != "" && txtSDT.Text != "" && txtLuong.Text != "" && cbGianHang.Text != "" && (radNam.Checked == false || radNu.Checked == false) && fluu != 0)
                 {
-                    MessageBox.Show("Lỗi" + ex.Message);
-                }
-            }
-            else if (txtMaNV.Text != "" && txtTenNV.Text != "" && txtQueQuan.Text != "" && txtSDT.Text != "" && txtLuong.Text != "" && cbGianHang.Text != "" && (radNam.Checked == false || radNu.Checked == false) && fluu != 0)
-            {
-                try
-                {
-                    Bus.UpdateData(obj);
-                    MessageBox.Show("Sửa Thành Công ! ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    HienThi();
-                    frmNhanVien_Load(sender, e);
-                    clearData();
-                    DisEnl(false);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Lỗi" + ex.Message);
-                }
+                    try
+                    {
+                        Bus.UpdateData(obj);
+                        MessageBox.Show("Sửa Thành Công ! ", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        HienThi();
+                        frmNhanVien_Load(sender, e);
+                        clearData();
+                        DisEnl(false);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Lỗi" + ex.Message);
+                    }
+                }         
             }
         }
 
