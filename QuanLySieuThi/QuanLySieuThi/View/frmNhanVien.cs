@@ -191,7 +191,7 @@ namespace QuanLySieuThi.View
                 int.TryParse(txtLuong.Text, out _luong);
                 obj.Luong = _luong;
 
-                if (txtMaNV.Text != "" && txtTenNV.Text != "" && txtQueQuan.Text != "" && txtSDT.Text != "" && txtLuong.Text != "" && cbGianHang.Text != "" && (radNam.Checked == false || radNu.Checked == false) && fluu == 0)
+                if (fluu == 0)
                 {
                     try
                     {
@@ -208,7 +208,7 @@ namespace QuanLySieuThi.View
                         MessageBox.Show("Lỗi" + ex.Message);
                     }
                 }
-                else if (txtMaNV.Text != "" && txtTenNV.Text != "" && txtQueQuan.Text != "" && txtSDT.Text != "" && txtLuong.Text != "" && cbGianHang.Text != "" && (radNam.Checked == false || radNu.Checked == false) && fluu != 0)
+                else if (fluu != 0)
                 {
                     try
                     {
