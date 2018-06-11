@@ -58,7 +58,7 @@ VALUES  ( 'NV02' , -- MaNV - varchar(10)
           N'Hà Nam' , -- QueQuan - nvarchar(20)
           '0987654987' , -- SDT - varchar(11)
           8500000 , -- Luong - int
-          'GH02' , -- MaGH - varchar(10)
+          'GH002' , -- MaGH - varchar(10)
           N'Nam'  -- GioiTinh - nvarchar(5)
         )
 GO
@@ -78,7 +78,7 @@ VALUES  ( 'NV03' , -- MaNV - varchar(10)
           N'Quảng Ninh' , -- QueQuan - nvarchar(20)
           '0987906987' , -- SDT - varchar(11)
           8500000 , -- Luong - int
-          'GH02' , -- MaGH - varchar(10)
+          'GH002' , -- MaGH - varchar(10)
           N'Nữ'  -- GioiTinh - nvarchar(5)
         )
 GO
@@ -98,7 +98,7 @@ VALUES  ( 'NV04' , -- MaNV - varchar(10)
           N'Bắc Ninh' , -- QueQuan - nvarchar(20)
           '0987689034' , -- SDT - varchar(11)
           8500000 , -- Luong - int
-          'GH01' , -- MaGH - varchar(10)
+          'GH001' , -- MaGH - varchar(10)
           N'Nữ'  -- GioiTinh - nvarchar(5)
         )
 GO
@@ -118,7 +118,7 @@ VALUES  ( 'NV05' , -- MaNV - varchar(10)
           N'Hà Nam' , -- QueQuan - nvarchar(20)
           '0987658923' , -- SDT - varchar(11)
           9500000 , -- Luong - int
-          'GH03' , -- MaGH - varchar(10)
+          'GH003' , -- MaGH - varchar(10)
           N'Nam'  -- GioiTinh - nvarchar(5)
         )
 GO
@@ -138,7 +138,7 @@ VALUES  ( 'NV06' , -- MaNV - varchar(10)
           N'Hà Nam' , -- QueQuan - nvarchar(20)
           '0987658234' , -- SDT - varchar(11)
           8500000 , -- Luong - int
-          'GH03' , -- MaGH - varchar(10)
+          'GH003' , -- MaGH - varchar(10)
           N'Nam'  -- GioiTinh - nvarchar(5)
         )
 GO
@@ -158,7 +158,7 @@ VALUES  ( 'NV07' , -- MaNV - varchar(10)
           N'Hà Nội' , -- QueQuan - nvarchar(20)
           '0989074987' , -- SDT - varchar(11)
           8500000 , -- Luong - int
-          'GH04' , -- MaGH - varchar(10)
+          'GH004' , -- MaGH - varchar(10)
           N'Nam'  -- GioiTinh - nvarchar(5)
         )
 GO
@@ -178,7 +178,7 @@ VALUES  ( 'NV08' , -- MaNV - varchar(10)
           N'Bắc Giang' , -- QueQuan - nvarchar(20)
           '0987657896' , -- SDT - varchar(11)
           8500000 , -- Luong - int
-          'GH04' , -- MaGH - varchar(10)
+          'GH004' , -- MaGH - varchar(10)
           N'Nam'  -- GioiTinh - nvarchar(5)
         )
 GO
@@ -198,7 +198,7 @@ VALUES  ( 'NV09' , -- MaNV - varchar(10)
           N'Hà Nam' , -- QueQuan - nvarchar(20)
           '0987659237' , -- SDT - varchar(11)
           8500000 , -- Luong - int
-          'GH05' , -- MaGH - varchar(10)
+          'GH005' , -- MaGH - varchar(10)
           N'Nam'  -- GioiTinh - nvarchar(5)
         )
 GO
@@ -218,33 +218,79 @@ VALUES  ( 'NV10' , -- MaNV - varchar(10)
           N'Hà Nam' , -- QueQuan - nvarchar(20)
           '0987013687' , -- SDT - varchar(11)
           9500000 , -- Luong - int
-          'GH05' , -- MaGH - varchar(10)
+          'GH005' , -- MaGH - varchar(10)
           N'Nam'  -- GioiTinh - nvarchar(5)
         )
 
---GO
---INSERT dbo.HangHoa
---        ( MaHH, TenHH, Gia, NSX, HSD, MaLHH, GhiChu )
---VALUES  ('HH01','Dầu Gội','50000','2018/01/01','2019/01/01','LHH01','')
---INSERT dbo.HangHoa
---        ( MaHH, TenHH, Gia, NSX, HSD, MaLHH, GhiChu )
---VALUES  ('HH02','Bột Giặt','60000','2018/01/01','2019/01/01','LHH02','')
---INSERT dbo.HangHoa
---        ( MaHH, TenHH, Gia, NSX, HSD, MaLHH, GhiChu )
---VALUES  ('HH03','Nước Rửa Bát','70000','2018/01/01','2019/01/01','LHH03','')
---INSERT dbo.HangHoa
---        ( MaHH, TenHH, Gia, NSX, HSD, MaLHH, GhiChu )
---VALUES  ('HH04','Cocacola','15000','2018/01/01','2019/01/01','LHH04','')
+GO
+INSERT dbo.HangHoa
+        ( MaHH, TenHH, Gia, NSX, HSD, MaLHH, GhiChu )
+VALUES  ('HH01','Dầu Gội','50000','2018/01/01','2019/01/01','LHH01','')
+INSERT dbo.HangHoa
+        ( MaHH, TenHH, Gia, NSX, HSD, MaLHH, GhiChu )
+VALUES  ('HH02','Bột Giặt','60000','2018/01/01','2019/01/01','LHH02','')
+INSERT dbo.HangHoa
+        ( MaHH, TenHH, Gia, NSX, HSD, MaLHH, GhiChu )
+VALUES  ('HH03','Nước Rửa Bát','70000','2018/01/01','2019/01/01','LHH03','')
+INSERT dbo.HangHoa
+        ( MaHH, TenHH, Gia, NSX, HSD, MaLHH, GhiChu )
+VALUES  ('HH04','Cocacola','15000','2018/01/01','2019/01/01','LHH04','')
 
---INSERT dbo.HangHoa
---        ( MaHH, TenHH, Gia, NSX, HSD, MaLHH, GhiChu )
---VALUES  ('HH05','Mì Tôm','5000','2018/01/01','2019/01/01','LHH05','')
---INSERT dbo.HangHoa
---        ( MaHH, TenHH, Gia, NSX, HSD, MaLHH, GhiChu )
---VALUES  ('HH06','Kem','25000','2018/01/01','2019/01/01','LHH06','')
---INSERT dbo.HangHoa
---        ( MaHH, TenHH, Gia, NSX, HSD, MaLHH, GhiChu )
---VALUES  ('HH07','Sữa','15000','2018/01/01','2019/01/01','LHH07','')
---INSERT dbo.HangHoa
---        ( MaHH, TenHH, Gia, NSX, HSD, MaLHH, GhiChu )
---VALUES  ('HH08','Monter Energy','35000','2018/01/01','2019/01/01','LHH08','')
+INSERT dbo.HangHoa
+        ( MaHH, TenHH, Gia, NSX, HSD, MaLHH, GhiChu )
+VALUES  ('HH05','Mì Tôm','5000','2018/01/01','2019/01/01','LHH05','')
+INSERT dbo.HangHoa
+        ( MaHH, TenHH, Gia, NSX, HSD, MaLHH, GhiChu )
+VALUES  ('HH06','Kem','25000','2018/01/01','2019/01/01','LHH06','')
+INSERT dbo.HangHoa
+        ( MaHH, TenHH, Gia, NSX, HSD, MaLHH, GhiChu )
+VALUES  ('HH07','Sữa','15000','2018/01/01','2019/01/01','LHH07','')
+INSERT dbo.HangHoa
+        ( MaHH, TenHH, Gia, NSX, HSD, MaLHH, GhiChu )
+VALUES  ('HH08','Monter Energy','35000','2018/01/01','2019/01/01','LHH08','')
+
+DELETE dbo.GianHang
+INSERT dbo.GianHang
+        ( MaGH, TenGH, ViTri, MaNQL )
+VALUES  ('GH002','Gian Hàng 2','Tầng 2','' )
+INSERT dbo.GianHang
+        ( MaGH, TenGH, ViTri, MaNQL )
+VALUES  ('GH003','Gian Hàng 3','Tầng 3','' )
+INSERT dbo.GianHang
+        ( MaGH, TenGH, ViTri, MaNQL )
+VALUES  ('GH004','Gian Hàng 4','Tầng 4','' )
+INSERT dbo.GianHang
+        ( MaGH, TenGH, ViTri, MaNQL )
+VALUES  ('GH005','Gian Hàng 5','Tầng 5','' )
+INSERT dbo.GianHang
+        ( MaGH, TenGH, ViTri, MaNQL )
+VALUES  ('GH006','Gian Hàng 6','Tầng 6','' )
+
+GO 
+INSERT dbo.LoaiHangHoa
+        ( MaLHH, TenLHH, GhiChu, MaGH )
+VALUES  ( 'LHH02','Bánh','','GH002')
+GO 
+INSERT dbo.LoaiHangHoa
+        ( MaLHH, TenLHH, GhiChu, MaGH )
+VALUES  ( 'LHH03','Kẹo','','GH002')
+GO 
+INSERT dbo.LoaiHangHoa
+        ( MaLHH, TenLHH, GhiChu, MaGH )
+VALUES  ( 'LHH04','Nước Giải Khát','','GH003')
+GO 
+INSERT dbo.LoaiHangHoa
+        ( MaLHH, TenLHH, GhiChu, MaGH )
+VALUES  ( 'LHH05','Bột Giặt','','GH004')
+GO 
+INSERT dbo.LoaiHangHoa
+        ( MaLHH, TenLHH, GhiChu, MaGH )
+VALUES  ( 'LHH06','Nước Rửa Bát','','GH004')
+GO 
+INSERT dbo.LoaiHangHoa
+        ( MaLHH, TenLHH, GhiChu, MaGH )
+VALUES  ( 'LHH07','Đồ Gia Dụng','','GH005')
+GO 
+INSERT dbo.LoaiHangHoa
+        ( MaLHH, TenLHH, GhiChu, MaGH )
+VALUES  ( 'LHH08','Sữa','','GH006')

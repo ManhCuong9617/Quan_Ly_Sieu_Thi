@@ -42,9 +42,7 @@ D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\QuanL
 D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\QuanLySieuThi.pdb
 D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.csprojResolveAssemblyReference.cache
 D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.Properties.Resources.resources
-D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.Views.frmDangNhap.resources
 D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.View.frmHoaDon_CTHD.resources
-D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.Views.frmKhachHang.resources
 D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.View.frmLoaiHangHoa_CTLHH.resources
 D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.View.frmNhaCungCap.resources
 D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.View.frmNhanVien.resources
@@ -153,3 +151,20 @@ E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\Qu
 E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.View.frmhuongdan.resources
 E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.View.frmKhachHang.resources
 E:\Kỳ 6\Thực Tập Nhóm\Bài Tập\GitHub\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.View.frmMain.resources
+D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.View.frmDangNhap.resources
+D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.View.frmGianHang.resources
+D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.View.frmhuongdan.resources
+D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.View.frmInHoaDon.resources
+D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.View.frmKhachHang.resources
+D:\GitHub\QLSieuThi\Quan_Ly_Sieu_Thi\QuanLySieuThi\QuanLySieuThi\obj\Debug\QuanLySieuThi.View.frmMain.resources
